@@ -1,0 +1,334 @@
+
+@font-face{
+    font-family:'shentox';
+    src:url("./fonts/Shentox/Shentox.ttf"); format("truetype");
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face{
+    font-family:'shentox';
+    src:url("./fonts/Shentox/Shentox Bold.ttf"); format("truetype");
+    font-style:normal;
+    font-weight:bold;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("./fonts/evesansneue/evesansneue-regular.otf"); format("OpenType");
+    font-style:normal;
+    font-weight:normal;
+    font-stretch:normal;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("./fonts/evesansneue/evesansneue-bold.otf"); format("OpenType");
+    font-style:normal;
+    font-weight:bold;
+    font-stretch:normal;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("./fonts/evesansneue/evesansneue-italic.otf"); format("OpenType");
+    font-style:italic;
+    font-weight:normal;
+    font-stretch:normal;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("./fonts/evesansneue/evesansneue-bolditalic.otf"); format("OpenType");
+    font-style:italic;
+    font-weight:bold;
+    font-stretch:normal;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("./fonts/evesansneue/evesansneue-condensed.otf"); format("OpenType");
+    font-style:normal;
+    font-weight:normal;
+    font-stretch:condensed;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("./fonts/evesansneue/evesansneue-condensedbold.otf"); format("OpenType");
+    font-style:normal;
+    font-weight:bold;
+    font-stretch:condensed;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("./fonts/evesansneue/evesansneue-condenseditalic.otf"); format("OpenType");
+    font-style:italic;
+    font-weight:normal;
+    font-stretch:condensed;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("./fonts/evesansneue/evesansneue-condensedbolditalic.otf"); format("OpenType");
+    font-style:italic;
+    font-weight:bold;
+    font-stretch:condensed;
+}
+
+
+iframe{
+    border:0px solid black;
+}
+iframe.agentslist {
+    width:210px;
+    height:calc(99% - 55px);
+
+}
+iframe.missionslist {
+    width:69%;
+    height:calc(99% - 55px);
+}
+ 
+@media ( max-width : 700px){
+    iframe.agentslist {
+        width:30%;
+
+    }
+    iframe.missionslist {
+        width:68%;
+    }    
+}
+
+td.mainmenu1,td.mainmenu2,td.mainmenu3,td.mainmenu4,a.mainlogin{
+    font-size:24px;
+    padding:10px;
+    padding-right:30px;
+    padding-left:30px;
+    height:50px;
+}
+img.mainportrait{
+    width:48px;
+}
+span.mainusername{
+    font-size:16px;  
+}
+
+body{
+    background-color:rgba(8,8,8,1);
+    color:rgba(255,255,255,1);
+    font-family:'Shentox';
+    user-select: none;
+}
+td.mdetail_content{
+    user-select: text;
+}
+
+body.agents_list,body.missions_list{
+
+    background-color:rgba(15,15,15,1);
+}
+
+div.agent_list_head{
+    width:100%;
+    font-family:"Shentox";
+    font-size:20px;
+    text-align:center;
+    margin-bottom:10px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:clip;
+
+}
+td,table{
+    border-collapse:collapse;
+    border:0px solid black;
+}
+
+a{
+    font-weight:bold;
+    color:rgba(215,140,0,1);
+    text-decoration: none;
+}
+a:hover{
+    font-weight:bold;
+    color:rgba(255,183,50,1);
+    text-decoration:underline;
+}
+
+
+table.agent_slot,table.agent_slot_selected,table.mission_slot{
+    background-color:rgba(8,8,8,1);
+    width:100%;
+}
+
+
+table.agent_slot:hover,table.mission_slot:hover{
+    background-color:rgba(21,21,21,1);
+}
+table.agent_slot_selected{
+    background-color:rgba(52,52,72,1);
+
+}
+td{
+    font-size:13px;
+    font-family:'evesansneue';
+    font-stretch: normal;
+    font-weight:normal;
+    padding:0px;
+
+}
+
+td.agent_name,td.agent_type,td.agent_conv,td.mission_title,td.mission_detail{
+    text-align:left;
+    height:16px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+
+    
+
+}
+
+
+
+td.agent_portrait{
+    width:48px;
+}
+img.agent_portrait{
+    width:48px;
+    height:48px;
+}
+@media (max-width: 130px){
+    td.agent_portrait{
+        width:0px;
+    }
+    img.agent_portrait{
+        width:0px;
+        height:0px;
+    }
+}
+td.agent_conv{
+   text-align:right;
+   
+}
+
+
+
+td.mission_objective_icon{
+    width:48px;
+}
+
+img.mission_objective_icon{
+    width:48px;
+    height:48px;
+}
+
+td.mission_detail{
+    height:32px;
+}
+span.mission_status1{
+    color:rgb(233, 113, 0);
+}
+
+span.mission_status_1{
+    color:rgb(28, 164, 255);
+}
+span.mission_status3{
+    color:rgb(0, 255,0);
+}
+span.mission_status4{
+    color:rgb(0, 255, 242);
+}
+
+td.mdetail_content,td.mdetail_objective,td.mdetail_granted,td.mdetail_reward,td.mdetail_bonus,td.mdetail_note,td.mdetail_timelimit{
+
+    text-align:left;
+    font-family:"evesansneue";
+    font-weight:lighter;
+    font-size:13px;
+    font-stretch:normal;
+    padding-bottom:20px;
+    overflow:auto;
+    white-space:auto;
+}
+td.mdetail_title{
+    text-align:left;
+    font-size:21px;
+    font-stretch:normal;  
+}
+
+td.mdetail_objective_title,td.mdetail_granted_title,td.mdetail_reward_title,td.mdetail_bonus_title,td.mdetail_note_title{
+
+    text-align:left;
+    font-size:17px;
+    font-stretch:normal;
+}
+td.mdetail_objective_icon,td.mdetail_granted_icon,td.mdetail_reward_icon,td.mdetail_bonus_icon{
+
+    vertical-align:top;
+    padding-left:14px;
+    margin-left:0px;
+}
+img.mdetail_objective_icon,img.mdetail_granted_icon,img.mdetail_reward_icon,img.mdetail_bonus_icon{
+
+    width:32px;
+    margin-right:6px;
+    margin-bottom:20px;
+}
+
+span.mdetail_timelimit{
+    color:rgb(255, 34, 34);
+}
+
+iframe.mission_detail{
+    width:500px;
+    height:90%;
+    position:fixed;
+    left:50px;
+    top:50px;
+    z-index:99;
+}
+
+@media ( max-width : 550px){
+    iframe.mission_detail{
+        width:calc(99% - 50px);
+    }
+}
+
+
+
+
+div.mdetail_content{
+    background-color:rgb(8,8,8);
+}
+
+div.mdetail_decision{
+    background-color:rgb(2,2,2);
+    text-align:center;
+    padding-top:8px;
+    padding-bottom:10px;
+}
+
+span.mdetail_accept, span.mdetail_close{
+    background-color:rgb(26,26,26);
+    color:rgb(164,164,164);
+
+    border:1px solid rgb(44,44,44);
+
+    font-family:"evesansneue";
+    font-size:13px;
+    font-stretch:condensed;
+
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+
+}
+span.mdetail_accept:hover, span.mdetail_close:hover{
+    background-color:rgb(46,46,46);
+    color:rgb(234,234,234);
+    border:1px solid rgb(62,62,62);
+    
+}
+div.no_available_found{
+    font-size:30px;
+    text-align:center;
+    width: 99%;
+    margin-top:60px;
+    font-family:"Shentox";
+    color:rgb(71, 71, 71);
+}
